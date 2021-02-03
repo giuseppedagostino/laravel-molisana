@@ -1,5 +1,5 @@
 main {
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: lighten(lightgrey, 10%);
   .container {
     width: 80%;
@@ -7,6 +7,7 @@ main {
       text-transform: uppercase;
     }
     .cards_rule {
+      margin-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
       .card {

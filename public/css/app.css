@@ -42,7 +42,7 @@ header .list-inline li a {
 }
 
 main {
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: #ededed;
 }
 main .container {
@@ -52,6 +52,7 @@ main .container h2 {
   text-transform: uppercase;
 }
 main .container .cards_rule {
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
 }
