@@ -8,6 +8,7 @@
 
 .container {
   margin: 0 auto;
+  border: 4px dotted red;
 }
 
 a {
@@ -90,6 +91,22 @@ main .container .cards_rule .card:hover .card_text {
 }
 
 footer {
-  padding: 50px;
+  padding: 30px 0;
   background-color: white;
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container .column {
+  display: inline-block;
+  margin: 0 10px;
+  height: 400px;
+  width: calc(100% / 3 - 20px);
+  background-color: rgba(0, 0, 0, 0.2);
 }

@@ -1,3 +1,9 @@
 <footer>
-  <h1>Footer</h1>
+  <div class="container">
+
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+
+  </div>
 </footer>
