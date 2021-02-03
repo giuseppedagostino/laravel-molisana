@@ -1,5 +1,6 @@
 main {
-  background-color: lightgrey;
+  padding: 20px 0;
+  background-color: lighten(lightgrey, 10%);
   .container {
     width: 80%;
     h2 {
@@ -9,10 +10,33 @@ main {
       display: flex;
       flex-wrap: wrap;
       .card {
+        position: relative;
         width: calc(100% / 3 - 10px);
         margin: 5px;
         img {
           max-width: 100%;
+          display: block;
+        }
+        .card_text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(darken($colorActiveListItem, 25%), 0.75);
+          // centro il link
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: 0.4s;
+          a {
+            color: white;
+          }
+        }
+        &:hover .card_text {
+          opacity: 1;
+          cursor: pointer;
         }
       }
     }

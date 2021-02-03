@@ -8,7 +8,11 @@
 
 .container {
   margin: 0 auto;
-  border: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
 }
 
 header {
@@ -33,14 +37,13 @@ header .list-inline li:hover {
   background-color: #B2E5FC;
 }
 header .list-inline li a {
-  text-decoration: none;
   color: black;
-  font-size: 22px;
   font-weight: 600;
 }
 
 main {
-  background-color: lightgrey;
+  padding: 20px 0;
+  background-color: #ededed;
 }
 main .container {
   width: 80%;
@@ -53,11 +56,33 @@ main .container .cards_rule {
   flex-wrap: wrap;
 }
 main .container .cards_rule .card {
+  position: relative;
   width: calc(100% / 3 - 10px);
   margin: 5px;
 }
 main .container .cards_rule .card img {
   max-width: 100%;
+  display: block;
+}
+main .container .cards_rule .card .card_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(55, 188, 247, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s;
+}
+main .container .cards_rule .card .card_text a {
+  color: white;
+}
+main .container .cards_rule .card:hover .card_text {
+  opacity: 1;
+  cursor: pointer;
 }
 
 footer {
