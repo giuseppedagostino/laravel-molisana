@@ -7,6 +7,17 @@
 }
 
 body {
-  padding: 50px;
   background-color: lightgrey;
+}
+
+header {
+  height: 220px;
+  width: 100%;
+  background-color: white;
+}
+header .list-inline {
+  list-style: none;
+}
+header .list-inline li {
+  display: inline-block;
 }

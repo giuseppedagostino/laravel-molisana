@@ -4,14 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- titolo --}}
-    <title>Molisana - Home</title>
+    <title>La Molisana - Home</title>
     {{-- css--}}
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href={{ asset("css/app.css") }}>
   </head>
 
   <body>
 
-    <h1>Molisana - Home</h1>
+    {{-- header --}}
+    <header>
+      {{-- OGNI VOLTA CHE USO ASSET PARTE DA PUBLIC --}}
+      <img src="{{ asset('img/marchio-sito-test.png') }}" alt="La Molisana">
+
+      <ul class="list-inline">
+        <li class="active">
+          <a href="#">HOME</a>
+        </li>
+        <li>
+          <a href="#">PRODOTTI</a>
+        </li>
+        <li>
+          <a href="#">NEWS</a>
+        </li>
+      </ul>
+    </header>
+    {{-- /header --}}
+
+    {{-- main --}}
+    <main>
+
+    </main>
+    {{-- /main --}}
+
+    {{-- footer --}}
+    <footer>
+      <h1>FOOTER</h1>
+    </footer>
+    {{-- /footer --}}
     
   </body>
 </html>

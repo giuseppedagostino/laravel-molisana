@@ -1,0 +1,11 @@
+header {
+  height: 220px;
+  width: 100%;
+  background-color: white;
+  .list-inline {
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+  }
+}

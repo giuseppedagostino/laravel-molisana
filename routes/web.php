@@ -160,9 +160,15 @@ Route::get('/', function () {
         }
     }
 
-    dd($lunghe, $corte, $cortissime);
+    // Dump e Die stampa gli array per fare debug
+    // dd($lunghe, $corte, $cortissime);
 
-    return view('home');
+    // il secondo argomento che gli passo è una variablile, io gli passo l'array contenente i 3 array di tipi di pasta
+    return view('home', [
+        "lunghe" => $lunghe,
+        "corte" => $corte,
+        "cortissime" => $cortissime,
+    ]);
 });
 
 Route::get('/news', function () {
