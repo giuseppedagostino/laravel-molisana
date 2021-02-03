@@ -11,24 +11,8 @@
 
   <body>
 
-    {{-- header --}}
-    <header>
-      {{-- OGNI VOLTA CHE USO ASSET PARTE DA PUBLIC --}}
-      <img src="{{ asset('img/marchio-sito-test.png') }}" alt="La Molisana">
-
-      <ul class="list-inline">
-        <li class="active">
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Prodotti</a>
-        </li>
-        <li>
-          <a href="#">News</a>
-        </li>
-      </ul>
-    </header>
-    {{-- /header --}}
+    {{-- includo il codice dell'header per non ripeterlo poi in tutte le pagine, Laravel utilizza la DOT NOTATION --}}
+    @include('partials.header')
 
     {{-- main --}}
     <main>
@@ -88,12 +72,7 @@
     </main>
     {{-- /main --}}
 
-    {{-- footer --}}
-
-    <footer>
-      <h1>FOOTER</h1>
-    </footer>
-    {{-- /footer --}}
+    @include('partials.footer')
     
   </body>
 </html>
