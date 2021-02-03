@@ -87,6 +87,6 @@ main .container .cards_rule .card:hover .card_text {
 }
 
 footer {
-  height: 110px;
+  padding: 50px;
   background-color: white;
 }
