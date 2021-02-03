@@ -37,7 +37,7 @@
 
         {{-- contenitore delle card --}}
         <div class="cards_rule">
-          @foreach ($lunghe as $lunga)
+          @foreach ($lunghe as $pasta)
           <div class="card">
             <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
           </div>
@@ -47,7 +47,7 @@
       </section>
     </main>
     {{-- /main --}}
-      <h1>MAIN</h1>
+    
     {{-- footer --}}
 
     <footer>

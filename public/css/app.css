@@ -6,10 +6,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body {
-  background-color: lightgrey;
-}
-
 .container {
   margin: 0 auto;
   border: 2px solid red;
@@ -44,7 +40,7 @@ header .list-inline li a {
 }
 
 main {
-  height: 110px;
+  background-color: lightgrey;
 }
 main .container {
   width: 80%;
@@ -57,16 +53,14 @@ main .container .cards_rule {
   flex-wrap: wrap;
 }
 main .container .cards_rule .card {
-  width: calc(100%/3);
-  height: 100px;
+  width: calc(100% / 3 - 10px);
   margin: 5px;
-  background-color: blue;
 }
 main .container .cards_rule .card img {
   max-width: 100%;
 }
 
 footer {
-  height: 440px;
+  height: 110px;
   background-color: white;
 }

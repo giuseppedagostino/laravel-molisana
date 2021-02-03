@@ -1,5 +1,5 @@
 main {
-  height: 110px;
+  background-color: lightgrey;
   .container {
     width: 80%;
     h2 {
@@ -9,10 +9,8 @@ main {
       display: flex;
       flex-wrap: wrap;
       .card {
-        width: calc(100%/3);
-        height: 100px;
+        width: calc(100% / 3 - 10px);
         margin: 5px;
-        background-color: blue;
         img {
           max-width: 100%;
         }
