@@ -144,6 +144,24 @@ Route::get('/', function () {
         ]
     ];
 
+    // Suddivido i tipi di pasta in 3 array più piccoli per stamparli poi più facilmente nella pagina
+    $lunghe = [];
+    $corte = [];
+    $cortissime = [];
+
+    foreach ($data as $pasta) {
+        if ($pasta["tipo"] == "lunga") {
+            // il push in php si fa con l'uguale (da non confondere con l'uguaglianza)
+            $lunghe[] = $pasta;
+        } elseif ($pasta["tipo"] == "corta") {
+            $corte[] = $pasta;
+        } elseif ($pasta["tipo"] == "cortissima") {
+            $cortissime[] = $pasta;
+        }
+    }
+
+    dd($lunghe, $corte, $cortissime);
+
     return view('home');
 });
 
