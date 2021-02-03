@@ -1,11 +1,27 @@
 header {
-  height: 220px;
-  width: 100%;
-  background-color: white;
+  text-align: center;
+  background-color: $colorHeaderFooter;
+  img {
+    margin: 30px;
+  }
   .list-inline {
     list-style: none;
     li {
       display: inline-block;
+      padding: 20px 15px;
+      margin: 0px 5px;
+      &.active {
+        background-color: $colorActiveListItem;
+      }
+      &:hover {
+        background-color: $colorActiveListItem;
+      }
+      a {
+        text-decoration: none;
+        color: $textColor;
+        font-size: 22px;
+        font-weight: 600;
+      }
     }
   }
 }

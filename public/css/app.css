@@ -11,13 +11,38 @@ body {
 }
 
 header {
-  height: 220px;
-  width: 100%;
+  text-align: center;
   background-color: white;
+}
+header img {
+  margin: 30px;
 }
 header .list-inline {
   list-style: none;
 }
 header .list-inline li {
   display: inline-block;
+  padding: 20px 15px;
+  margin: 0px 5px;
+}
+header .list-inline li.active {
+  background-color: #B2E5FC;
+}
+header .list-inline li:hover {
+  background-color: #B2E5FC;
+}
+header .list-inline li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main {
+  height: 110px;
+}
+
+footer {
+  height: 440px;
+  background-color: white;
 }
