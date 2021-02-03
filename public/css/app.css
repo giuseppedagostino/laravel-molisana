@@ -10,6 +10,11 @@ body {
   background-color: lightgrey;
 }
 
+.container {
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
 header {
   text-align: center;
   background-color: white;
@@ -40,6 +45,25 @@ header .list-inline li a {
 
 main {
   height: 110px;
+}
+main .container {
+  width: 80%;
+}
+main .container h2 {
+  text-transform: uppercase;
+}
+main .container .cards_rule {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .container .cards_rule .card {
+  width: calc(100%/3);
+  height: 100px;
+  margin: 5px;
+  background-color: blue;
+}
+main .container .cards_rule .card img {
+  max-width: 100%;
 }
 
 footer {

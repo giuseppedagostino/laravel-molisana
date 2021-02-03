@@ -1,3 +1,22 @@
 main {
   height: 110px;
+  .container {
+    width: 80%;
+    h2 {
+      text-transform: uppercase;
+    }
+    .cards_rule {
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        width: calc(100%/3);
+        height: 100px;
+        margin: 5px;
+        background-color: blue;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }

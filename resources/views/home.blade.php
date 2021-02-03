@@ -32,11 +32,24 @@
 
     {{-- main --}}
     <main>
+      <section class="container">
+        <h2>le lunghe</h2>
 
+        {{-- contenitore delle card --}}
+        <div class="cards_rule">
+          @foreach ($lunghe as $lunga)
+          <div class="card">
+            <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
+          </div>
+          @endforeach
+        </div>
+
+      </section>
     </main>
     {{-- /main --}}
       <h1>MAIN</h1>
     {{-- footer --}}
+
     <footer>
       <h1>FOOTER</h1>
     </footer>
