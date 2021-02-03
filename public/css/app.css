@@ -6,20 +6,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.list-inline {
-  list-style: none;
-}
-.list-inline li {
-  display: inline-block;
-  margin: 0 15px;
-  padding: 20px 10px;
-}
-
 body {
   padding: 50px;
   background-color: lightgrey;
-}
-
-h1 {
-  font-size: 48px;
 }
