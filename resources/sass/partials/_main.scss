@@ -1,6 +1,9 @@
 main {
+  background-image: url('../img/fondo-pag-speciali.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: top;
   padding: 30px 0;
-  background-color: lighten(lightgrey, 10%);
   .container {
     width: 80%;
     h2 {
