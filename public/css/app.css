@@ -110,3 +110,6 @@ footer .container .column {
   width: calc(100% / 3 - 20px);
   background-color: rgba(0, 0, 0, 0.2);
 }
+footer .container .column ul {
+  list-style: none;
+}

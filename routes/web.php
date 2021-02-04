@@ -169,8 +169,12 @@ Route::get('/', function () {
         "corte" => $corte,
         "cortissime" => $cortissime,
     ]);
-});
+})->name('home');
 
 Route::get('/news', function () {
     return view('news');
-});
+})->name('news');
+
+Route::get('/prodotto', function () {
+    return view('prodotto');
+})->name('prodotto');
