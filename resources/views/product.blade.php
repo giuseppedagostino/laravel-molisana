@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-  <h2>sezione prodotto</h2>
+  <h2>sezione prodotto {{ $product["titolo"] }}</h2>
 </div>
 @endsection

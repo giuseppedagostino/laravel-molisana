@@ -14,7 +14,7 @@
       <div class="card">
         <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
         <div class="card_text">
-          <a href="#">{{ $pasta["titolo"] }}</a>
+          <a href="{{ route('product', [ 'idProdotto' => $pasta['id']]) }}">{{ $pasta["titolo"] }}</a>
         </div>
       </div>
       @endforeach
@@ -32,7 +32,7 @@
       <div class="card">
         <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
         <div class="card_text">
-          <a href="#">{{ $pasta["titolo"] }}</a>
+          <a href="{{ route('product', [ 'idProdotto' => $pasta['id']]) }}">{{ $pasta["titolo"] }}</a>
         </div>
       </div>
       @endforeach
@@ -50,7 +50,7 @@
       <div class="card">
         <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
         <div class="card_text">
-          <a href="#">{{ $pasta["titolo"] }}</a>
+          <a href="{{ route('product', [ 'idProdotto' => $pasta['id']]) }}">{{ $pasta["titolo"] }}</a>
         </div>
       </div>
       @endforeach

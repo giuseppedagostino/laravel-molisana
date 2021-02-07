@@ -11,6 +11,10 @@
   border: 4px dotted red;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   font-size: 22px;
@@ -23,21 +27,18 @@ header {
 header img {
   margin: 30px;
 }
-header .list-inline {
-  list-style: none;
-}
-header .list-inline li {
+header li {
   display: inline-block;
   padding: 20px 15px;
   margin: 0px 5px;
 }
-header .list-inline li.active {
+header li.active {
   background-color: #B2E5FC;
 }
-header .list-inline li:hover {
+header li:hover {
   background-color: #B2E5FC;
 }
-header .list-inline li a {
+header li a {
   color: black;
   font-weight: 600;
 }
@@ -104,12 +105,9 @@ footer .container {
   flex-wrap: wrap;
 }
 footer .container .column {
+  padding: 0 20px;
   display: inline-block;
   margin: 0 10px;
-  height: 400px;
   width: calc(100% / 3 - 20px);
   background-color: rgba(0, 0, 0, 0.2);
-}
-footer .container .column ul {
-  list-style: none;
 }
