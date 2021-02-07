@@ -91,6 +91,17 @@ main .container .cards_rule .card:hover .card_text {
   cursor: pointer;
 }
 
+.container {
+  background: #B7DAE5;
+}
+
+.product_wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
 footer {
   padding: 30px 0;
   background-color: white;
