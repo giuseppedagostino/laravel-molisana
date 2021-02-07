@@ -186,6 +186,7 @@ Route::get('/product/{idProdotto}', function ($id) {
 
     return view('product', [
         'product' => $data[$id],
+        'id' => $id,
     ]);
 })->name('product');
 

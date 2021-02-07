@@ -50,6 +50,7 @@ main {
 .container_product {
   background: $productColor;
   .product_wrapper {
+    position: relative;
     width: 80%;
     margin: auto;
     padding: 30px 0;
@@ -63,6 +64,41 @@ main {
     }
     img {
      max-width: 100%;
+    }
+  }
+  .prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: 0.25s;
+    a {
+      font-size: 36px;
+      color: $colorHeaderFooter;
+      transition: 0.25s;
+      &:hover {
+        color: $h1Color;
+      }
+    } 
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+  .next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: 0.25s;
+    a {
+      font-size: 36px;
+      color: $colorHeaderFooter;
+      transition: 0.25s;
+      &:hover {
+        color: $h1Color;
+      }
+    } 
+    &:hover {
+      transform: scale(1.4);
+      color: $h1Color;
     }
   }
 }
