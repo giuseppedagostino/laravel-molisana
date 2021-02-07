@@ -2,12 +2,12 @@
 
 @section('content')
 
-<div class="container">
+<div class="container_product">
   <div class="product_wrapper">
-    <h2>{{ $product["titolo"] }}</h2>
-    <h3>Tipologia: {{ $product["tipo"] }}</h3>
-    <h3>Peso: {{ $product["peso"] }}</h3>
-    <h4>{{ $product["descrizione"] }}</h4>
+    <h1>{{ $product["titolo"] }}</h1>
+    <img src="{{ $product["src-h"] }}" alt="{{ $product["titolo"] }}">
+    <img src="{{ $product["src-p"] }}" alt="{{ $product["titolo"] }}">
+    <p>{!! $product["descrizione"] !!}</p>
   </div>
 </div>
 

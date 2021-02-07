@@ -8,7 +8,6 @@
 
 .container {
   margin: 0 auto;
-  border: 4px dotted red;
 }
 
 ul {
@@ -33,10 +32,10 @@ header li {
   margin: 0px 5px;
 }
 header li.active {
-  background-color: #B2E5FC;
+  background-color: #B7DAE5;
 }
 header li:hover {
-  background-color: #B2E5FC;
+  background-color: #B7DAE5;
 }
 header li a {
   color: black;
@@ -76,7 +75,7 @@ main .container .cards_rule .card .card_text {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(55, 188, 247, 0.75);
+  background-color: rgba(89, 170, 195, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,15 +90,24 @@ main .container .cards_rule .card:hover .card_text {
   cursor: pointer;
 }
 
-.container {
+.container_product {
   background: #B7DAE5;
 }
-
-.product_wrapper {
+.container_product .product_wrapper {
   width: 80%;
   margin: auto;
   padding: 30px 0;
   text-align: center;
+}
+.container_product .product_wrapper h1 {
+  color: #002D73;
+}
+.container_product .product_wrapper p {
+  font-size: 22px;
+  text-align: left;
+}
+.container_product .product_wrapper img {
+  max-width: 100%;
 }
 
 footer {

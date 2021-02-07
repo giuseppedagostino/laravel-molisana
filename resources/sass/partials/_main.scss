@@ -47,12 +47,22 @@ main {
   }
 }
 
-.container {
+.container_product {
   background: $productColor;
-}
-.product_wrapper {
-  width: 80%;
-  margin: auto;
-  padding: 30px 0;
-  text-align: center;
+  .product_wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+    h1 {
+      color: $h1Color;
+    }
+    p {
+      font-size: 22px;
+      text-align: left;
+    }
+    img {
+     max-width: 100%;
+    }
+  }
 }
