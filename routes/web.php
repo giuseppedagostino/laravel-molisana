@@ -187,6 +187,7 @@ Route::get('/product/{idProdotto}', function ($id) {
     return view('product', [
         'product' => $data[$id],
         'id' => $id,
+        'max' => count($data) - 1
     ]);
 })->name('product');
 
