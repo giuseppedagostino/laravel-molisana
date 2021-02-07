@@ -189,6 +189,9 @@ Route::get('/product/{idProdotto}', function ($id) {
         'id' => $id,
         'max' => count($data) - 1
     ]);
+    // Avrei potuto passargli questi dati anche con la funzione compact.
+    // return view('home', compact('lunghe','corte','cortissime'))
+    // Vale solo quando chiave e variabile hannos stesso nome.
 })->name('product');
 
 // LA FUNZIONE NAME MI PERMETTE DI RICHIAMARE LE ROUTE NELLE VIEW DI BLADE ANCHE SE CAMBIA L'URL

@@ -4,58 +4,26 @@
 {{-- con il tag section vado ad inserire del contenuto proprio dove avevo inserito il segnaposto nel layout. Ovviamente devono avere lo stesso nome perchè funzioni --}}
 @section('content')
 <main>
+
+  {{-- poichè le card sono tutte simili tra di loro io posso utilizzare gli include parametrici e passargli come secondo argomento un array che contiene soltanto i valori che vanno cambiati --}}
+
   {{-- LUNGHE --}}
-  <section class="container">
-    <h2>le lunghe</h2>
-
-    {{-- contenitore delle card --}}
-    <div class="cards_rule">
-      @foreach ($lunghe as $pasta)
-      <div class="card">
-        <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
-        <div class="card_text">
-          <a href="{{ route('product', [ 'idProdotto' => $pasta['id']]) }}">{{ $pasta["titolo"] }}</a>
-        </div>
-      </div>
-      @endforeach
-    </div>
-
-  </section>
+  @include('partials.cards', [
+    'title' => 'le lunghe',
+    'pastaArray' => $lunghe
+  ])
 
   {{-- CORTE --}}
-  <section class="container">
-    <h2>le corte</h2>
-
-    {{-- contenitore delle card --}}
-    <div class="cards_rule">
-      @foreach ($corte as $pasta)
-      <div class="card">
-        <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
-        <div class="card_text">
-          <a href="{{ route('product', [ 'idProdotto' => $pasta['id']]) }}">{{ $pasta["titolo"] }}</a>
-        </div>
-      </div>
-      @endforeach
-    </div>
-
-  </section>
+  @include('partials.cards', [
+    'title' => 'le corte',
+    'pastaArray' => $corte
+  ])
 
   {{-- CORTISSIME --}}
-  <section class="container">
-    <h2>le cortissime</h2>
+  @include('partials.cards', [
+    'title' => 'le cortissime',
+    'pastaArray' => $cortissime
+  ])
 
-    {{-- contenitore delle card --}}
-    <div class="cards_rule">
-      @foreach ($cortissime as $pasta)
-      <div class="card">
-        <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
-        <div class="card_text">
-          <a href="{{ route('product', [ 'idProdotto' => $pasta['id']]) }}">{{ $pasta["titolo"] }}</a>
-        </div>
-      </div>
-      @endforeach
-    </div>
-
-  </section>
 </main>
 @endsection
